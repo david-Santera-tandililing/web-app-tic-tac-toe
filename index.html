@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚡ Ultimate Neon Tic-Tac-Toe Battle! 🎮</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>⚡ Neon Tic-Tac-Toe Battle! ⚡</h1>
+
+        <div class="score-board">
+            <div id="score-X" class="score-player X-score">
+                Player X: <span class="score-count" data-player="X">0</span>
+            </div>
+            <div id="score-O" class="score-player O-score">
+                Player O: <span class="score-count" data-player="O">0</span>
+            </div>
+        </div>
+
+        <div id="status-message">Player X's Turn!</div>
+        
+        <div id="game-board" class="game-board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        
+        <button id="reset-button">Restart Round</button>
+        <button id="clear-score-button" class="secondary-button">Clear Scores</button>
+
+        <p class="footer-note">Challenge your friend, one glow at a time!</p>
+        
+        <footer class="main-footer">
+            <p>&copy; 2025 Neon Gaming. Built with 💖 HTML, CSS & JS.</p>
+        </footer>
+    </div>
+
+    <div id="victory-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modal-text"></h2>
+            <button id="modal-next-round">Next Round</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
